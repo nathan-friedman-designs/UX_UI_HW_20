@@ -122,3 +122,37 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+#navContainer {
+    display: inline-block;
+    position: fixed;
+    width: 66px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #C9DAF8;
+    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+}
+.mainNav {
+    /*homework code: width: 73%;*/
+    position: fixed;
+    width: 64px;
+    height: 99%;
+    background-color: black;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+}
+.topBar {
+    position: relative;
+    margin-top: 10px;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+.logo {
+    margin-left: auto;
+  margin-right: auto;
+  }
