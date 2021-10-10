@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.card {
+    outline: 3px solid #C9DAF8;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.25%;
+    margin-bottom: 6.25%;
+}
+
+.horizImg {
+    width: 344px;
+    height: 194px;
+    margin: auto auto;
+}
+
+.horizCard {
+    width: 405px;
+    height: 268px;
+}
+
+.squareImg {
+    width: 152px;
+    height: 152px;
+    margin: auto auto;
+}
+
+.squareCard {
+    width: 177px;
+    height: 177px;
+}
+
+.interviewCard {
+    width: 186px;
+    height: 352px;
+}
+
+.container {
+    width: 800px;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #C9DAF8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.25%;
+    margin-bottom: 6.25%;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 64px;
+    color: #C9DAF8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.25%;
+    margin-bottom: 6.25%;
+}
+
+h2 {
+    font-family: 'Orbitron';
+    font-size: 24px;
+    color: #E69138;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 6.25%;
+}
+
+a {
+    font-family: 'Orbitron';
+    font-size: 14px;
+    color: #C9DAF8;
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Orbitron';
+    font-size: 18px;
+    color: #E69138;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nonCardContent {
+    width: 800px;
+}
+
+.avatarImg {
+    width: 152px;
+    height: 152px;
+    margin: auto auto;
+}
+
+#mobImg {
+    height: 227px;
+    width: 136px;
+    margin: auto auto;
+    outline: 1px solid silver;
+}
+
+.jumbotron {
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
