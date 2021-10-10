@@ -37,30 +37,29 @@
     
     <body>
       
-      <div id= "navContainer">
-      <ul class="mainNav nav flex-column">
-        
-        <li class="nav-item">
-          
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        
-        <li class="nav-item">
-          
-          <a class="nav-link" href="#">Work</a>
-        </li>
-        
-        <li class="nav-item">
-          
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-        
-        <li class="nav-item">
-          
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      </div>
+      <section class="navigation">
+        <div id= "navContainer">
+        <nav class= "mainNav inline-block">
+            <ul>
+                <li class="inline-block">
+                    <a href="#logo" class="deskA"><img src= "images/home.png" width="25" height="25"> Home</a>
+                </li>
+                
+                <li class="inline-block">
+                    <a href="#work" class="deskA"><img src= "images/work.png" width="25" height="25"> Work</a>
+                </li>
+
+                <li class="inline-block">
+                    <a href="#skills" class="deskA"><img src= "images/skill.png" width="25" height="25"> Skills</a>
+                </li>
+
+                <li class="inline-block">
+                  <a href="#contact" class="deskA"><img src= "images/contact.png" width="25" height="25"> Contact</a>
+              </li>
+          </ul>
+        </nav>
+        </div>
+        </section>
       <header class="topBar">
         
         <div class="hamburger">
@@ -74,38 +73,60 @@
          </div>
       </header>
 
+      <section class="mobNav">
+        <div class="hamburger">
+            
+          <img src= "images/hamburgerMenu.png" width="25" height="25">
+         </div>
+        <ul>
+            <li class="inline-block">
+                <a href="#logo" class="mobA"><img src= "images/home.png" width="25" height="25"> Home</a>
+        </li>
+            <li class="inline-block">
+            <a href="#work" class="mobA"><img src= "images/work.png" width="25" height="25"> Work</a>
+            </li>
+
+            <li class="inline-block">
+                <a href="#skills" class="mobA"><img src= "images/skill.png" width="25" height="25"> Skills</a>
+            </li>
+            <li class="inline-block">
+              <a href="#contact" class="mobA"><img src= "images/contact.png" width="25" height="25"> Contact</a>
+          </li>
+      </ul>
+  </section>
+
         <!-- case study navigation section using nav component from Bootstrap 4-->
         
         <ul class="nav nav-tabs">
             
             <li class="nav-item">
               
-                <a class="nav-link active" href="#">0. Introduction</a>
+                <a class="nav-link" href="#">0. Introduction</a>
             </li>
             
             <li class="nav-item">
               
-                <a class="nav-link" href="#">1. User Research</a>
+                <a class="nav-link" href="#phase1">1. User Research</a>
             </li>
             
             <li class="nav-item">
               
-                <a class="nav-link" href="#">2. Definition & I.A.</a>
+                <a class="nav-link" href="#phase2">2. Definition & I.A.</a>
             </li>
             
             <li class="nav-item">
                 
-                <a class="nav-link" href="#">3. Low-Fidelity Wireframing</a>
+                <a class="nav-link" href="#phase3">3. Low-Fidelity Wireframing</a>
               </li>
               
               <li class="nav-item">
                 
-                <a class="nav-link" href="#">4. High-Fidelity Mockup</a>
+                <a class="nav-link" href="#phase4">4. High-Fidelity Mockup</a>
               </li>
               
               <li class="nav-item">
                 
-                <a class="nav-link" href="#">5. Advanced IxD</a>
+                <a class="nav-link" href="#phase5">5. Advanced IxD</a>
               </li>
           </ul>
 
@@ -113,14 +134,21 @@
           
           <div class="jumbotron">
             
-            <div class="centered">
-              
-              <h1 class="display-4">
-                What if the transition to civilian life was made easier on veterans?
-              </h1>
+            <div class="textShadowBox">
             </div>
+
+              <div class="centered">
+              
+              <h1 class="what-if">
+                
+                What if the transition to civilian life was made easier on veterans?
+              
+              </h1>
+              
+              </div>
             
-            <img src="images/jumbotron_flag.png" width=1440 height=400>
+
+            <img src="images/jumbotron_flag.png" class="flag" height=400>
             
           </div>
 
@@ -158,7 +186,7 @@
 
           <!-- research section using col system and card components from Bootstrap 4-->
 
-          <h2>
+          <h2 id="phase1">
             PHASE 1: USER RESEARCH_
           </h2>
 
@@ -237,7 +265,7 @@
 
         <!-- problem statement section using the jumbotron component from Bootstrap 4 -->
 
-        <h2>
+        <h2 id="phase2">
           PHASE 2: DEFINITION & I.A._
         </h2>
 
@@ -246,8 +274,8 @@
         </p>
 
         <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">
+          <div class="PSContainer">
+            <h1 class="problemStatement">
               Disabled veterans are struggling to obtain resources on finding a new career path, receiving housing assistance, and coexisting in civilian life. We have observed that these users are not discovering services through the National Veterans Outreach website, leaving them to face a tedious process through government channels.
               How might we make veterans feel confident in finding the services they need?</h1>
           </div>
@@ -262,12 +290,13 @@
         To assist us in our design, we generated a user flow diagram to visualize the optimal user experience. In this scenario, the user would follow a simple path to employment information,along the way encountering a site feature that matched their skills to career opportunities.
       </p>
 
-      <!-- iteration section made using card components and collapse components from Bootstrap 4 -->
+      <!-- iteration section made using card components from Bootstrap 4 -->
       
-      <h2>
+      <h2 id="phase3">
         PHASE 3: LOW-FIDELITY WIREFRAMING_
       </h2>
-<!-- accordion start -->
+
+<!-- QUARANTINED UNTIL I FIGURE OUT WHY MY ACCORDION DOES NOT FUNCTION
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -327,10 +356,47 @@
           </div>
         </div>
       </div> 
-<!-- accordion end-->
+END QUARANTINE -->
+
+<div class="card">
+  <div class="card-header">
+    Iteration: Sketch Prototype
+  </div>
+  <div class="card vertiCard">
+  <img src="images/sketchPrototype.png" class="card-img-top vertiImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">From here, we sketched a prototype and garnered feedback.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Iteration: Low-Fidelity Prototype
+  </div>
+  <div class="card horizCard">
+  <img src="images/lo-fiPrototype.png" class="card-img-top horizImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">We took the observations and kept them in consideration during the creation of our low-fidelity prototype, which we offered for user testing.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Iteration: Mid-Fidelity Prototype
+  </div>
+  <div class="card horizCard">
+  <img src="images/mid-fiPrototype.png" class="card-img-top horizImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">User testing provided us additional feedback to aid our next round of iteration, resulting in our mid-fidelity prototype, which was adjusted to cater to the priorities of our users.</p>
+  </div>
+</div>
+
       <!-- hi-fi prototype section made using col system from Bootstrap 4 -->
 
-      <h2>
+      <h2 id="phase4">
         PHASE 4: HIGH-FIDELITY MOCKUP_
       </h2>
 
@@ -375,7 +441,7 @@
       A center feature of our design was a module for skill matching to assist veterans in transferring military skills to civilian work and therefore helping ease their transition into civilian life. This module included a questionnaire users would fill out regarding their experience in different fields of knowledge, which would provide the data to match jobs to the strongest skills. To further support this transition effort, we also included listings with pre-filtered jobs and apprenticeship programs, as well as resume assistance.
     </p>
 
-      <h2>
+      <h2 id="phase5">
         PHASE 5: ADVANCED IxD_
       </h2>
 
@@ -422,51 +488,48 @@
         In the end, a last round of testing demonstrated that users enjoyed the experience of the redesigned website. Not only did this validate our efforts, but, most importantly, it meant that we had a stronger alternative to the current site design, one that could offer better assistance in easing the transition to civilian life for returning veterans: our users.
       </p>
 
+      <footer id="contact">
+        <div class="contact">
+            <ul class="contactIcons">
+                <li>
+                    <a href="mailto:nathan.friedman.designs@gmail.com"><img src="images/email.png" width=25 height=25></a>
+                </li>
+                <li>
+                    <a href="tel:+2103508884"><img src="images/phone.png" width=25 height=25></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nathanfriedmandesigns/"><img src="images/linkedin.png" width=25 height=25></a>
+                </li>
+                <li>
+                    <a href="https://friespace.medium.com/"><img src="images/medium.png" width=25 height=25></a>
+                </li>
+            </ul>
+        </div>
+      </footer>
+
+      <div class="preloader">
+        <img src="images/logo.png">
+    </div>
 
       <!-- <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js”
-    integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo”
-    crossorigin=“anonymous”></script>
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js”
-    integrity=“sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1”
-    crossorigin=“anonymous”></script>
-  <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
-    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
-    crossorigin=“anonymous”></script>
-
-    <script src="https://kit.fontawesome.com/71c0fac313.js" crossorigin="anonymous"></script>
-    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-    <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-
-    <!--<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js”
-    integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo”
-    crossorigin=“anonymous”></script>
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js”
-    integrity=“sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1”
-    crossorigin=“anonymous”></script>
-  <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
-    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
-    crossorigin=“anonymous”></script>-->
-
-    <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
-    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
-    crossorigin=“anonymous”></script>
-      <script src=“https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js” integrity=“sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p” crossorigin=“anonymous”></script>
-      <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js”
       integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo”
       crossorigin=“anonymous”></script>
     <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js”
       integrity=“sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1”
       crossorigin=“anonymous”></script>
-  <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
+      <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
     integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
     crossorigin=“anonymous”></script>
+      <script src=“https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js” integrity=“sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p” crossorigin=“anonymous”></script>
+  <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
+    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
+    crossorigin=“anonymous”></script> -->
+
+    <script src="https://kit.fontawesome.com/71c0fac313.js" crossorigin="anonymous"></script>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src="js/index.js"></script>
 
     </body>
 
     
-
 </html>
